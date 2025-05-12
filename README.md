@@ -64,7 +64,7 @@ function calculateTotalValue(products) {
     return total + productValue;
   }, 0);
 }
-
+```
 
 ### Interactivity for Product Carousel
 
@@ -73,7 +73,7 @@ Smooth animations for opening and closing the modal were implemented using Frame
 
 ---
 
-## Part 3: ReactJS & TailwindCSS
+## 📑Part 3: ReactJS & TailwindCSS
 
 ### Props and State in ReactJS
 
@@ -97,7 +97,7 @@ Framer Motion handled modal animations.
 
 ---
 
-## Part 4: Problem Solving & Advanced Concepts
+## 📑Part 4: Problem Solving & Advanced Concepts
 
 ### CSS Specificity
 
@@ -110,9 +110,9 @@ CSS specificity determines which styles are applied to an element when multiple 
 
 Example:
 
-#submit { color: red; }       /* 100 */
-.button { color: blue; }      /* 10 */
-button { color: green; }      /* 1 */
+#submit { color: red; } /_ 100 _/
+.button { color: blue; } /_ 10 _/
+button { color: green; } /_ 1 _/
 → #submit will override .button and button.
 
 ### CSS Grid
@@ -126,15 +126,17 @@ Advantages over Flexbox:
 
 Example: Responsive Two-Column Layout
 .container {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 20px;
+display: grid;
+grid-template-columns: 200px 1fr;
+gap: 20px;
 }
-
 
 ---
 
 ## Contributors
 
 Anh Bui Quang
+
+```
+
 ```
