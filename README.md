@@ -1,35 +1,60 @@
-# WMT Test report
+# WMT Frontend Developer Test Report
 
 ---
 
+## 📋 Overview
 
-## Part 1: Responsive HTML & CSS
+This is a submission for the **WMT Frontend Developer Test**, covering the following:
 
-### HTML Page with Product Carousel
+- ✅ Responsive HTML & CSS Product Carousel
+- ✅ JavaScript Function for product value calculation and modal interactivity
+- ✅ ReactJS refactoring with TailwindCSS and Framer Motion for animations
+- ✅ CSS theory explanations (Specificity and Grid system)
+
+**Technologies used:**  
+HTML, CSS, JavaScript, React, TailwindCSS, Framer Motion, SwiperJS, Vite
+
+---
+
+## 🚀 Demo Link
+
+- [Part 3 (React + TailwindCSS + Framer Motion) Deployment](https://wmt-test-part3.vercel.app/)
+
+---
+
+## 📦 Source Code
+
+- [Source for Part 1 and Part 2 (HTML, CSS, JavaScript)](https://github.com/QuangAnh49/WMT-FE_TASK)
+
+---
+
+## 📑 Part 1: Responsive HTML & CSS
+
+### ✅ Product Carousel
 
 A product carousel was created with the following features:
 
+- The carousel displays **three products**.
 - Each product includes a title, a brief description, and an image.
-- The carousel displays six products.
 
-### CSS Styling for Responsiveness
+### ✅ CSS Styling for Responsiveness
 
-The carousel was styled using **CSS Media Queries** and **TailwindCSS** to achieve the following:
+The carousel was styled using **plain CSS with Media Queries** to achieve:
 
-- **Desktop View**: Displays three products in a row, each taking up roughly 1/3 of the screen width.
-- **Tablet View (768px and above)**: Displays two products per row.
-- **Mobile View (below 768px)**: Displays one product per row.
-- Smooth transitions between different viewport sizes were implemented using TailwindCSS utility classes.
+- **Desktop View:** Displays three products per row.
+- **Tablet View (768px and above):** Displays two products per row.
+- **Mobile View (below 768px):** Displays one product per row.
+- Smooth transitions between viewport sizes using CSS transitions.
 
 ---
 
-## Part 2: JavaScript
+## 📑 Part 2: JavaScript
 
-### JavaScript Function for Total Value Calculation
+### ✅ JavaScript Function for Total Value Calculation
 
-A JavaScript function was implemented to calculate the total value of products in an array. The function applies a 10% discount if the quantity of a product is greater than 5.
+A JavaScript function was implemented to calculate the total value of products in an array. It applies a 10% discount if a product’s quantity exceeds 5.
 
-Example:
+**Example:**
 
 ```javascript
 function calculateTotalValue(products) {
@@ -39,7 +64,7 @@ function calculateTotalValue(products) {
     return total + productValue;
   }, 0);
 }
-```
+
 
 ### Interactivity for Product Carousel
 
@@ -62,8 +87,13 @@ State was used in the Carousel component to manage the currently selected produc
 
 ### Refactored HTML Structure into ReactJS Component
 
-The HTML structure was refactored into a ReactJS component using TailwindCSS for styling.
-A state variable was implemented to update the displayed product carousel based on user interaction (e.g., clicking navigation buttons).
+The HTML structure was refactored into React components.
+
+TailwindCSS was used for styling.
+
+State variables controlled the modal display and carousel navigation (Next/Prev buttons).
+
+Framer Motion handled modal animations.
 
 ---
 
@@ -80,7 +110,10 @@ CSS specificity determines which styles are applied to an element when multiple 
 
 Example:
 
-In this case, the #submit rule will override the .button rule due to higher specificity.
+#submit { color: red; }       /* 100 */
+.button { color: blue; }      /* 10 */
+button { color: green; }      /* 1 */
+→ #submit will override .button and button.
 
 ### CSS Grid
 
@@ -92,6 +125,11 @@ Advantages over Flexbox:
 - Grid provides better control over alignment and spacing of items in both dimensions.
 
 Example: Responsive Two-Column Layout
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
 
 
 ---
@@ -99,3 +137,4 @@ Example: Responsive Two-Column Layout
 ## Contributors
 
 Anh Bui Quang
+```
