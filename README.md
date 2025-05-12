@@ -110,10 +110,12 @@ CSS specificity determines which styles are applied to an element when multiple 
 
 Example:
 
+```css
 #submit { color: red; } /_ 100 _/
 .button { color: blue; } /_ 10 _/
 button { color: green; } /_ 1 _/
 → #submit will override .button and button.
+```
 
 ### CSS Grid
 
@@ -125,11 +127,14 @@ Advantages over Flexbox:
 - Grid provides better control over alignment and spacing of items in both dimensions.
 
 Example: Responsive Two-Column Layout
+
+```css
 .container {
-display: grid;
-grid-template-columns: 200px 1fr;
-gap: 20px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
 }
+```
 
 ---
 
